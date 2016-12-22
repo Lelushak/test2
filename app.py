@@ -20,7 +20,7 @@ def geophone(message):
     button_phone = types.KeyboardButton(text="Test phone", request_contact=True)
     button_geo = types.KeyboardButton(text="Test place", request_location=True)
     keyboard.add(button_phone, button_geo)
-    bot.send_message(message.chat.id, Blablabla", reply_markup=keyboard)
+    bot.send_message(message.chat.id, "Blablabla", reply_markup=keyboard)
 
 @bot.message_handler(commands=["testkey"])
 def ReplyKeyboardHide()     
