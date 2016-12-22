@@ -2,7 +2,6 @@ import config
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot(config.token)
 
 @bot.message_handler(commands=['start', 'help'])
 def handle_start_help(message):
