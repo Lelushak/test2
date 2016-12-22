@@ -6,7 +6,7 @@ bot = telebot.TeleBot(config.token)
 
 @bot.message_handler(commands=['start', 'help'])
 def handle_start_help(message):
-    bot.send_message(message.chat.id, "Hello"
+    bot.send_message(message.chat.id, "Hello")
 
 @bot.message_handler(content_types=["text"])
 def repeat_all_messages(message): 
