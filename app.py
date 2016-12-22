@@ -23,7 +23,6 @@ def geophone(message):
     bot.send_message(message.chat.id, "Blablabla", reply_markup=keyboard)
 
 @bot.message_handler(commands=["testkey"])
-def ReplyKeyboardHide()
     markup = types.ReplyKeyboardMarkup()
     markup.row('Numerics', 'Symbols')
     markup.row('Special')
