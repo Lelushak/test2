@@ -15,10 +15,10 @@ def repeat_all_messages(message):
 @bot.message_handler(commands=["geophone"])
 def geophone(message):
     keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
-    button_phone = types.KeyboardButton(text="Отправить номер телефона", request_contact=True)
-    button_geo = types.KeyboardButton(text="Отправить местоположение", request_location=True)
+    button_phone = types.KeyboardButton(text="Test phone", request_contact=True)
+    button_geo = types.KeyboardButton(text="Test place", request_location=True)
     keyboard.add(button_phone, button_geo)
-    bot.send_message(message.chat.id, "Отправь мне свой номер телефона или поделись местоположением, жалкий человечишка!", reply_markup=keyboard)
+    bot.send_message(message.chat.id, Blablabla", reply_markup=keyboard)
 
 @bot.message_handler(commands=["testkey"])
 def ReplyKeyboardHide()     
